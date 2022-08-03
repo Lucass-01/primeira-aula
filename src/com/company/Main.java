@@ -5,12 +5,20 @@ import java.util.*;
 public class Main {
 
     public static void main(String[] args) {
-        funcaoSoma(2, 2);
-        funcaoSubtrair(5,2);
-        List<String> x = nomesDeAlunos("Lucas","Fernando");
-        for (String s: x){
-            System.out.println(s);
-        }
+//        funcaoSoma(2, 2);
+//        funcaoSubtrair(5,2);
+//        List<String> x = nomesDeAlunos("Lucas","Fernando");
+//        for (String s: x){
+//            System.out.println(s);
+//        }
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Qual é seu nome?");
+        String s = scanner.nextLine();
+        System.out.println("Que ano você nasceu?");
+        int ano = Integer.parseInt(scanner.nextLine());
+        int idade = 2022-ano;
+        System.out.println("Nome: "+ s);
+        System.out.println("Idade: "+ idade);
     }
 
     public  static List<String> nomesDeAlunos(String s,String str) {
